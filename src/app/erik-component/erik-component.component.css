@@ -1,0 +1,21 @@
+.cabecera{
+  background-image: url(../../assets/pokemon_header.jpg);
+  background-size: contain;
+  filter: blur(2px) opacity(80%);
+  width: 100%;
+  height: 10%;
+}
+
+.texto-titulo{
+  font-family:Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  font-size:calc(35px + 1vw);
+  margin: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
