@@ -16,7 +16,7 @@ export class GetPokemonListService {
   }
 
   public getMenu():Observable<any>{
-    return this.http.get('../assets/pokemon.json-master/pokedex.json');
+    return this.http.get('http://88.14.8.4/php_rest_api/api/pokemon/read.php');
  }
 
 }
