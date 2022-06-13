@@ -16,7 +16,7 @@ export class PokemonlistComponentComponent implements OnInit {
 
   constructor(private PLS:GetPokemonListService) {
     this.PLS.getMenu().subscribe(async (data:any) =>{
-      this.pokemonList = await data;
+      this.pokemonList = await data['data'];
       console.log(this.pokemonList)
     })
 
