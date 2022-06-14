@@ -2,7 +2,6 @@ import { IPokemon } from './../Pokemons/Pokemon';
 import { GetPokemonListService } from './../get-pokemon-list.service';
 import { Component, Inject, OnInit } from '@angular/core';
 import { AppComponent } from '../app.component';
-import {MatCardModule} from '@angular/material/card';
 
 AppComponent
 @Component({

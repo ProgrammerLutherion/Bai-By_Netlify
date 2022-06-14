@@ -1,3 +1,42 @@
-<h1 *ngIf="pokemon !== undefined">
-  {{pokemon.name_english}}
-</h1>
+<div class="body">
+  <div class="container" *ngIf="pokemon !== undefined">
+    <div class="row low-row-margin">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <h1 style="font-size: 50px;font-family: PokemonSolid;">{{pokemon.name_english}}</h1>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <div class="row low-row-margin">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <img src="../../assets/pokemon.json-master/images/{{ getimagepath(pokemon.id) }}" alt="">
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row row-margin">
+      <div class="col-sm-4">
+        <h1>Base Attack: {{pokemon.base_Attack}}</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>Base Defense: {{pokemon.base_Defense}}</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>Base HP: {{pokemon.base_HP}}</h1>
+      </div>
+    </div>
+    <div class="row row-margin">
+      <div class="col-sm-4">
+        <h1>Base SpAttack: {{pokemon.base_SpAttack}}</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>Base SpDefense: {{pokemon.base_SpDefense}}</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>Base Speed: {{pokemon.base_Speed}}</h1>
+      </div>
+    </div>
+  </div>
+</div>

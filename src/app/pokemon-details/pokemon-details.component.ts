@@ -1,3 +1,4 @@
+import { PokemonlistComponentComponent } from './../pokemonlist-component/pokemonlist-component.component';
 import { IPokemon } from './../Pokemons/Pokemon';
 import { GetPokemonListService } from './../get-pokemon-list.service';
 import { Component, OnInit } from '@angular/core';
@@ -22,7 +23,18 @@ export class PokemonDetailsComponent implements OnInit {
   loadPokemon(){
     const pokemonId = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     this.PLS.getMenu().subscribe(data =>{
-      this.pokemon =  data[pokemonId-1];
+      this.pokemon =  data['data'][pokemonId-1];
     });
+  }
+
+  public getimagepath(idnumber:number){
+    let zeroamount:number = 3;
+    let path:string = "";
+
+    for (zeroamount; zeroamount > idnumber.toString().length; zeroamount--) {
+      path += "0";
+    }
+    path += idnumber+".png";
+    return path;
   }
 }

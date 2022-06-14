@@ -7,3 +7,13 @@ body,html{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: PokemonSolid;
+  src: url(assets/PokemonSolid.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: PokemonHollow;
+  src: url(assets/PokemonHollow.ttf) format("opentype");
+}

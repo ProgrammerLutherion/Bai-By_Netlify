@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ErikComponentComponent } from './erik-component/erik-component.component';
+import { TitleComponentComponent } from './title-component/title-component.component';
 import { GetPokemonListService } from './get-pokemon-list.service';
 import { PokemonlistComponentComponent } from './pokemonlist-component/pokemonlist-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErikComponentComponent,
+    TitleComponentComponent,
     PokemonlistComponentComponent,
     PokemonDetailsComponent
   ],
@@ -23,7 +25,8 @@ import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.compo
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [
     GetPokemonListService
