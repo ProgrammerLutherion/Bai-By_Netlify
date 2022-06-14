@@ -4,7 +4,6 @@ import { GetPokemonListService } from './../get-pokemon-list.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-pokemon-details',
   templateUrl: './pokemon-details.component.html',
@@ -13,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PokemonDetailsComponent implements OnInit {
   pokemon = {} as IPokemon;
   error:any;
+  arrowLeft:any;
 
   constructor(private activatedRoute:ActivatedRoute,private PLS:GetPokemonListService) { }
 

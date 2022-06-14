@@ -1,6 +1,7 @@
 import { TitleComponentComponent } from './title-component/title-component.component';
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
